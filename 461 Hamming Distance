@@ -1,0 +1,25 @@
+//461 Hamming Distance
+#include <stdio.h>
+int hammingDistance(int x,int y)
+{
+	int n=0;
+	int xor=x^y;
+	int i;
+
+	for(i=0;i<32;i++)
+	{
+		if((xor&1)!=0)
+			n++;
+		xor=xor>>1;
+	}
+	return n;
+}
+int main()
+{
+	int n,x,y;
+	x=4;
+	y=4;
+	n=hammingDistance(x,y);
+	printf("%d",n);
+	return 0;
+}
