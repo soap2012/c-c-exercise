@@ -5,5 +5,8 @@ public class Hello{
         System.out.println("bear");
         System.out.println("world");
         System.out.println("sumsung!");
+
+        CalculatorHello test=new CalculatorHello();
+        System.out.println(test.Add(1,2));
     }
 }
